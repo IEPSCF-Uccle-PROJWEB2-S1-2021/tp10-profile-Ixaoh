@@ -1,4 +1,10 @@
 <%- include('header'); -%>
 <h1><%= title %></h1>
 <p>Welcome to <%= title %></p>
+<p>Bonjour </p>
+<% if (utilisator) {  %>
+  <p><%= utilisator.nom%> <%= utilisator.prenom%>, code postal : <%= utilisator.codePostal%> </p> <% } else {  %>
+    <p>Visiteur !</p> <% } %>
+
+<div><a href="/account" class="btn btn-primary">Formulaire inscription</a></div>
 <%- include('footer') -%>

@@ -1,0 +1,43 @@
+<%- include('header'); -%>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<form action="/Add/User" method="post" id="account-form">
+  <div>
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="user_prenom">
+  </div>
+  <div>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="user_nom">
+  </div>
+  <div>
+    <label for="dateNaiss">Date de naissance :</label>
+    <input type="date" id="dateNaiss" name="user_dateNaiss">
+  </div>
+  <div>
+    <label for="Adresse">Addresse</label>
+  </div>
+  <div>
+    <label for="rue">Rue : </label>
+    <input type="text" id="rue" name="user_rue">
+  </div>
+  <div>
+    <label for="rueNumero">Numéro :</label>
+    <input type="value" id="rueNumero" name="user_rueNumero">
+  </div>
+  <div>
+    <label for="codePostal">Code Postal :</label>
+    <input type="value" id="codePostal" name="user_codePostal">
+  </div>
+  <div>
+    <label for="commune">commune :</label>
+    <input type="texte" id="commune" name="user_commune">
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary">Add</button>
+    <button type="reset" class="btn btn-outline-secondary">Cancel</a>
+  </div>
+</form>
+
+<script src="/js/login-script.js" defer></script>
+<%- include('footer') -%>
